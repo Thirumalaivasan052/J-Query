@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+    <body>
+        <h1>change with jquery</h1>
+        <p id="my text">thiru</p>
+        <button id="changebtn">change text</button>
+
+        <script>
+            $(document).ready(function() {
+                $('#changebtn').click(function(){
+                    $("#my text").text("text changed!");
+                    // alert('data saved')
+
+                });
+                
+            });
+        </script>
+    </body>
+</html>

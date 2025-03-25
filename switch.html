@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>switch statement</h1>
+    <label for="data">Choose a day</label>
+    <select  id="data">
+        <option value="1">monday</option>
+        <option value="2">tuesday</option>
+        <option value="3">wednesday</option>
+        <option value="4">thursday</option>
+        <option value="5">friday</option>
+        <option value="6">saturday</option>
+        <option value="7">sunday</option>
+
+
+    </select>
+    <button onclick="showtext()">showtext</button>
+    <p id="mes"></p> 
+
+    <script>
+        function showtext(){
+            const data= document.getElementById('data').value
+            let message
+            switch(data) {
+            case '1':
+                message = "It's Monday, start of a new week!";
+                break;
+            case '2': 
+                message = "It's Tuesday, keep going!";
+                break;
+            case '3':
+                message = "It's Wednesday, halfway through!";
+                break;
+            case '4':
+                message = "It's Thursday, almost there!";
+                break;
+            case '5':
+                message = "It's Friday, weekend is near!";
+                break;
+            case '6':
+                message = "It's Saturday, enjoy your weekend!";
+                break;
+            case '7':
+                message = "It's Sunday, rest and recharge!";
+                break;
+            default:
+                message = "Invalid day!";
+                break;
+        }
+
+        document.getElementById('mes').innerText = message;
+    }
+
+        
+    </script>
+
+
+</body>
+
+</html>

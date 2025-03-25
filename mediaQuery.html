@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Menu</title>
+    <link rel="stylesheet" href="mediaQuery.css"></link>
+    <style>
+       
+    </style>
+</head>
+<body>
+
+
+  <div  class="Webmenu">
+    <a href="#">Home</a>
+    <a href="#">About</a>   
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</div>
+
+   
+    <button class="menu-button" onclick="openMenu()">Open Menu</button>
+
+   
+    <div id="myMenu" class="menu">
+        <a href="#" class="close-btn" onclick="closeMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <script>
+       
+        function openMenu() {
+            document.getElementById("myMenu").style.width = "250px";
+        }
+
+     
+        function closeMenu() {
+            document.getElementById("myMenu").style.width = "0";
+        }
+    </script>
+
+</body>
+</html>

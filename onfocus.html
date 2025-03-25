@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function handleFocus(element){
+            element.style.backgroundColor = "green"
+        }
+    </script>
+</head>
+<body>
+    <h3>onfocus events</h3>
+    <label >username</label>
+    <input type="text" id="username" name="username"
+    onfocus="handleFocus(this)">
+    <br><br>
+
+    <label >Email</label>
+    <input type="text" id="Email" name="Email"
+    onfocus="handleFocus(this)">
+
+
+    
+    
+</body>
+</html>
